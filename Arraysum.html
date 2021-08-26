@@ -1,0 +1,41 @@
+<html>
+ <head>
+ <title>Array Sum</title>
+ <script>
+  function add()
+  {
+    var array=[12,13,14,15];
+    var sum=0;
+	var i;
+    for(i=0;i<4;i++)	
+	{ 
+	 sum=sum+array[i];
+	}
+	document.getElementById("arr").value=sum;
+   }
+ </script>
+ <style>
+  .center
+  {
+    text-align:center;
+	margin:auto;
+	width:30%;
+	border:10px solid black;
+	padding : 10px;
+	border-radius: 30px;
+  }
+  body
+  {
+	 background-image:url(cal.jpg); 
+	 background-repeat:no-repeat;
+	 background-size:cover;
+  }
+ </style>
+ </head>
+  <body align="center">
+  <div class="center">
+  <h1><label onclick="add()">Sum Of Element:</label></h1>
+  <input type="text" id="arr">
+  </form>
+  </div>
+</html>
